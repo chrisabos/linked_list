@@ -9,6 +9,6 @@ set(LL_SRC
 add_library(ll_lib ${LL_SRC})
 
 target_include_directories(ll_lib
-	PRIVATE
+	PUBLIC
 		${PROJECT_SOURCE_DIR}/include
 )
