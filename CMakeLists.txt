@@ -6,7 +6,7 @@ set(LL_SRC
 	src/linked_list.c
 )
 
-add_executable(ll_lib ${LL_SRC})
+add_library(ll_lib ${LL_SRC})
 
 target_include_directories(ll_lib
 	PRIVATE

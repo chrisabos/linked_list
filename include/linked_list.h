@@ -22,11 +22,12 @@ struct linked_list
 
 linked_list* ll_create(void (*func_free)(void*));
 ll_node* _ll_node_create(void* value, ll_node* next);
+int ll_get(linked_list* llp, unsigned int index, void** ret);
 size_t ll_size(linked_list* llp);
 int ll_insert(linked_list* llp, void* value, unsigned int index);
 int ll_push(linked_list* llp, void* value);
 void* ll_pop(linked_list* llp);
-void ll_delete(linked_list* llp);
-void ll_print(linked_list* llp);
+int ll_delete(linked_list* llp);
+int ll_for_each(linked_list* llp, void (*func)(void*));
 
 #endif
