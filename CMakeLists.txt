@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.18.4)
 
-project(ll_lib)
+project(linked_list)
 
 set(LL_SRC
 	src/linked_list.c
 )
 
-add_library(ll_lib ${LL_SRC})
+add_library(linked_list ${LL_SRC})
 
-target_include_directories(ll_lib
+target_include_directories(linked_list
 	PUBLIC
 		${PROJECT_SOURCE_DIR}/include
 )
