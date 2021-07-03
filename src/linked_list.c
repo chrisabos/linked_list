@@ -1,4 +1,6 @@
 /// @file linked_list.c
+
+#include <stdlib.h>
 #include "linked_list.h"
 
 struct ll_node

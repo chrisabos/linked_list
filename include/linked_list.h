@@ -1,10 +1,9 @@
 #ifndef _LINKED_LIST_H
 #define _LINKED_LIST_H
 
-// temp
-#include <stdio.h>
-
-#include <stdlib.h>
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define LL_SUCCESS 0
 #define LL_ERR_INVALID_ARG -1
@@ -30,4 +29,8 @@ void* ll_pop(linked_list* llp);
 int ll_delete(linked_list* llp);
 int ll_for_each(linked_list* llp, void (*func)(void*));
 
+#ifdef __cplusplus
+}
 #endif
+
+#endif // _LINKED_LIST_H
